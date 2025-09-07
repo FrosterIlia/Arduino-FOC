@@ -90,7 +90,7 @@ int _adc_init(Stm32CurrentSenseParams* cs_params, const STM32DriverParams* drive
   }else {
     // adc3
     // https://github.com/stm32duino/Arduino_Core_STM32/blob/e156c32db24d69cb4818208ccc28894e2f427cfa/system/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h#L673
-    sConfigInjected.InjectedSamplingTime = ADC3_SAMPLETIME_2CYCLES_5;
+    sConfigInjected.InjectedSamplingTime = ADC_SAMPLETIME_2CYCLES_5;
   }
   sConfigInjected.ExternalTrigInjecConvEdge = ADC_EXTERNALTRIGINJECCONV_EDGE_RISINGFALLING;  
   sConfigInjected.AutoInjectedConv = DISABLE;
